@@ -1,0 +1,4 @@
+{
+  "Call API": "flows/api_flow.py:call_api",
+  "my-favorite-function": "flows/basic_flow.py:my_favorite_function"
+}
