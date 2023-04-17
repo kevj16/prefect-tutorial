@@ -1,0 +1,45 @@
+###
+### A complete description of a Prefect Deployment for flow 'Call API'
+###
+name: api_flow_test
+description: Sends a GET request to the provided URL and returns the JSON response
+version: aaaf3b7b4cb28b7d84ae3659ea97297b
+# The work queue that will handle this deployment's runs
+work_queue_name: test
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Call API
+manifest_path: null
+storage: null
+path: /Users/kevin.juskowski/prefect-tutorial
+entrypoint: flows/api_flow.py:call_api
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    url:
+      title: url
+      default: http://time.jsontest.com/
+      position: 0
+      type: string
+  required: null
+  definitions: null
+timestamp: '2023-04-14T20:04:30.744480+00:00'
